@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Mulish";
+  font-family: "DM Sans";
   src: url("DMSans-BoldItalic.eot");
   src: url("DMSans-BoldItalic.eot?#iefix") format("embedded-opentype"),
     url("DMSans-BoldItalic.woff2") format("woff2"),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: "Mulish";
+  font-family: "DM Sans";
   src: url("DMSans-Italic.eot");
   src: url("DMSans-Italic.eot?#iefix") format("embedded-opentype"),
     url("DMSans-Italic.woff2") format("woff2"),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: "Mulish";
+  font-family: "DM Sans";
   src: url("DMSans-MediumItalic.eot");
   src: url("DMSans-MediumItalic.eot?#iefix") format("embedded-opentype"),
     url("DMSans-MediumItalic.woff2") format("woff2"),
@@ -32,7 +32,7 @@
 }
 
 @font-face {
-  font-family: "Mulish";
+  font-family: "DM Sans";
   src: url("DMSans-Regular.eot");
   src: url("DMSans-Regular.eot?#iefix") format("embedded-opentype"),
     url("DMSans-Regular.woff2") format("woff2"),
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-  font-family: "Mulish";
+  font-family: "DM Sans";
   src: url("DMSans-Bold.eot");
   src: url("DMSans-Bold.eot?#iefix") format("embedded-opentype"),
     url("DMSans-Bold.woff2") format("woff2"),
@@ -54,7 +54,7 @@
 }
 
 @font-face {
-  font-family: "Mulish";
+  font-family: "DM Sans";
   src: url("DMSans-Medium.eot");
   src: url("DMSans-Medium.eot?#iefix") format("embedded-opentype"),
     url("DMSans-Medium.woff2") format("woff2"),
