@@ -56,12 +56,10 @@
               </div>
             </nav>
           </div>
-          <a href="https://apps.apple.com/app/monsey/id1639090943?platform=iphone"
-            class="text-download light-version-logo">
+          <a class="text-download light-version-logo" style="cursor: pointer;" onclick="DetectAndServe()">
             Download now
           </a>
-          <a class="text-download-dark dark-version-logo"
-            href="https://apps.apple.com/app/monsey/id1639090943?platform=iphone">
+          <a class="text-download-dark dark-version-logo" style="cursor: pointer;" onclick="DetectAndServe()">
             Download now
           </a>
           <!-- mobile menu trigger -->
@@ -91,7 +89,7 @@
               <a href="https://apps.apple.com/app/monsey/id1639090943?platform=iphone">
                 <img class='button-apple' src="image/landing-2/apple-store.png" alt="image">
               </a>
-              <a href="">
+              <a href="https://play.google.com/store/apps/details?id=dev.timistudio.monsey">
                 <img src="image/landing-2/playstore.png" alt="image">
               </a>
             </div>
@@ -148,8 +146,7 @@
               </div>
               <div class="widgets-list">
                 <div class="col-lg-12">
-                  <a href="https://apps.apple.com/app/monsey/id1639090943?platform=iphone" class="btn focus-reset"
-                    onC>Download Now</a>
+                  <a class="btn focus-reset" style="cursor: pointer;" onclick="DetectAndServe()" onC>Download Now</a>
                 </div>
               </div>
             </div>
@@ -172,7 +169,8 @@
     </div>
     <!-- Content Area 4-->
     <div class="container">
-      <img class="frame_5" src="image/landing-2/frame_3.png" alt="image">
+      <img class="frame_5" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"
+        src="image/landing-2/frame_3.png" alt="image">
     </div>
     <!-- CTA Area -->
     <div class="cta-area bg-position">
@@ -186,7 +184,8 @@
                 <a href="
                 https://apps.apple.com/app/monsey/id1639090943?platform=iphone"><img
                     src="image/landing-2/app_store-black.png" alt="image"></a>
-                <a href=""><img src="image/landing-2/play_store_black.png" alt="image"></a>
+                <a href="https://play.google.com/store/apps/details?id=dev.timistudio.monsey"><img
+                    src="image/landing-2/play_store_black.png" alt="image"></a>
               </div>
             </div>
           </div>
@@ -214,6 +213,38 @@
       </div>
     </div>
   </div>
+  <script>
+    function getMobileOperatingSystem() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Windows Phone must come first because its UA also contains "Android"
+      if (/windows phone/i.test(userAgent)) {
+        return "Windows Phone";
+      }
+
+      if (/android/i.test(userAgent)) {
+        return "Android";
+      }
+
+      // iOS detection from: http://stackoverflow.com/a/9039885/177710
+      if (/iPad|iPhone|iPod|Mac/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+      }
+
+      return "unknown";
+    }
+
+    function DetectAndServe() {
+      let os = getMobileOperatingSystem();
+      if (os == "Android") {
+        window.location.href = "https://play.google.com/store/apps/details?id=dev.timistudio.monsey";
+      } else if (os == "iOS") {
+        window.location.href = "https://apps.apple.com/app/monsey/id1639090943?platform=iphone";
+      } else {
+        window.location.href = "https://play.google.com/store/apps/details?id=dev.timistudio.monsey";
+      }
+    }
+  </script>
   <!-- Vendor Scripts -->
   <script src="js/vendor.min.js"></script>
   <!-- Plugin's Scripts -->
