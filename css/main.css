@@ -2509,10 +2509,12 @@ li.sub-menu--item.nav-item-has-children i {
 .hero-area-2 .hero-area-content h2 {
   color: #0d152e;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
-  letter-spacing: -2.11px;
+  letter-spacing: 0.0120588em;
   line-height: 47px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 @media (min-width: 576px) {
@@ -19001,7 +19003,11 @@ li.sub-menu--item.nav-item-has-children i {
 }
 
 .monsey_manage {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 1.5px;
   font-weight: 700;
+  margin-right: 48px;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
